@@ -17,9 +17,6 @@ hide_style = """
     /* Hide the Streamlit header and GitHub/Fork icons */
     header {visibility: hidden;}
     
-    /* Hide the 'Made with Streamlit' footer */
-    footer {visibility: hidden;}
-    
     /* Optional: reduce top padding after hiding header */
     .block-container {padding-top: 2rem;}
     </style>
