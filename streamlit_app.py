@@ -8,7 +8,9 @@ with open(".kiro/product.md", "r", encoding="utf-8") as f:
 with open(".kiro/system.md", "r", encoding="utf-8") as f:
     SYSTEM_CONTEXT = f.read()
 
-client = OpenAI()
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY")
+)
 
 st.set_page_config(page_title="Mumbai Local Guide", page_icon="🚆")
 
