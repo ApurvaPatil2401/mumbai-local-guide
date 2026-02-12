@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-from openai import OpenAI
+from groq import Groq
 
 # Load local context
 with open(".kiro/product.md", "r", encoding="utf-8") as f:
@@ -9,9 +9,8 @@ with open(".kiro/product.md", "r", encoding="utf-8") as f:
 with open(".kiro/system.md", "r", encoding="utf-8") as f:
     SYSTEM_CONTEXT = f.read()
 
-client = OpenAI(
-    api_key=st.secrets["OPENAI_API_KEY"]
-)
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
+
 st.set_page_config(page_title="Mumbai Local Guide", page_icon="🚆")
 
 st.title("Mumbai Local Guide 🚆🌧️")
