@@ -24,7 +24,7 @@ query = st.text_input(
 if query:
     with st.spinner("Thinking like a Mumbaikar..."):
         response = client.chat.completions.create(
-            model="llama3-70b-8192",
+            model="openai/gpt-oss-120b",
             messages=[
                 {"role": "system", "content": SYSTEM_CONTEXT},
                 {"role": "system", "content": PRODUCT_CONTEXT},
