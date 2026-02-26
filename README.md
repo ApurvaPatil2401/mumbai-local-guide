@@ -23,3 +23,6 @@ Kiro uses this context to generate responses that reflect real Mumbai behavior i
 ```bash
 pip install -r requirements.txt
 streamlit run streamlit_app.py
+```
+## Try demo:
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mumbai-local-guide-4rygljnmqmapsawqtpoy9c.streamlit.app/)
