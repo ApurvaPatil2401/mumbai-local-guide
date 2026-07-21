@@ -1,4 +1,8 @@
 streamlit
+<<<<<<< HEAD
 groq
 openai
+=======
+boto3
+>>>>>>> 7226114 (Migrate Mumbai Local Guide to Amazon Bedrock)
 python-dotenv
